@@ -93,3 +93,34 @@ print(arr.min()) # 1 --> min of the array
 print(arr.var()) # 2.0 --> variance of the array
 print(arr.std()) # 1.4142135623730951 --> standard deviation of the array
 
+########## Transpose ##########
+
+# Transpose is used to convert rows into columns and columns into rows
+lst.Transpose() # 1 dimensional array will not be transposed
+Zeros.T # 2 dimensional
+
+
+## Whenever we are using np.array() then we are creating a new array and not modifying the existing array. Also, this is a float not an integer. This is important to understand when performing operations on the array.
+
+################## Axis ##################
+array = np.array([[1, 2], [3, 4]])
+array2 = np.array([[5, 6], [7, 8]])
+array3 = array + array2 # Adding two arrays
+print(array3) # [[ 6  8] [10 12]]
+
+a = array3.sum(axis=0) # sum of the array along the columns
+b = array3.sum(axis=1) # sum of the array along the rows
+print(a) # [16 20] --> sum of the array along the columns
+print(b) # [14 22] --> sum of the array along the rows
+print(array3.sum()) # 36 --> sum of the array
+
+a = np.array([[1,2,3,4,5,6],[10,20,30,40,50,60],[100,200,300,400,500,600],
+              [1000,2000,3000,4000,5000,6000]]) # 4 rows and 6 columns
+
+print(a[1:2,:2]) # [[10 20]] --> 1st row and 2nd column
+print(a[2:,3:5]) # [[400 500] [600 700]] --> 2nd row and 3rd column
+print(a[2:,4:]) # [[500 600] [700 800]] --> 2nd row and 3rd column
+
+
+a = np.array([1,2,3],[4,5,6],[7,8,9])
+b1 = 
