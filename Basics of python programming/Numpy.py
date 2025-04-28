@@ -122,5 +122,3 @@ print(a[2:,3:5]) # [[400 500] [600 700]] --> 2nd row and 3rd column
 print(a[2:,4:]) # [[500 600] [700 800]] --> 2nd row and 3rd column
 
 
-a = np.array([1,2,3],[4,5,6],[7,8,9])
-b1 = 
